@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SextaAulaApplication<sexta-aula>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.serratec.sextaaula.SextaAulaApplication",
+            "projectName": "sexta-aula",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
