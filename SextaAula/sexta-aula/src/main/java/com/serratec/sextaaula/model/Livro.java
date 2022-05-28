@@ -24,6 +24,7 @@ public class Livro {
     @JoinColumn(referencedColumnName = "id")
     private Categoria categoriaId;
 
+
     @ManyToMany
     @JoinTable(name="livro_autor", 
         joinColumns = @JoinColumn(name = "livro_fk", referencedColumnName = "id"),

@@ -9,6 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Autor {
 
@@ -19,6 +21,7 @@ public class Autor {
     @NotNull
     private String nome;
     
+    @JsonIgnore
     @ManyToMany(mappedBy = "autores")
     private Set<Livro> livros;
 

@@ -8,12 +8,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Categoria {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "categoriaId")
     private List<Livro> livros;
 
